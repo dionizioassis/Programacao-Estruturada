@@ -37,3 +37,10 @@ public class ExemploConstantes {
         dado.close();
     }
 }
+/*
+Faça um programa em Java que receba o nome de um produto, sua quantidade e seu preço unitário. Em seguida, mostre os dados no seguinte formato:
+
+Produto: Teclado | Quantidade: 2 | Preço unitário: R$ 149.90
+
+O preço deve ser exibido com exatamente duas casas decimais.
+*/
