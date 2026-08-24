@@ -22,19 +22,37 @@ public class ExemploConstantes {
 
     // Crie um programa que receba o nome e a idade de um usuário e mostre uma mensagem de boas vindas.
     public static void main(String[] args) {
-        Scanner dado = new Scanner((System.in));
-        String nome;
-        int idade;
-        System.out.print("Digite seu nome: ");
-        nome = dado.nextLine();
-        System.out.print("Digite sua idade: ");
-        idade = dado.nextInt();
+        // Scanner dado = new Scanner((System.in));
+        // String nome;
+        // int idade;
+        // System.out.print("Digite seu nome: ");
+        // nome = dado.nextLine();
+        // System.out.print("Digite sua idade: ");
+        // idade = dado.nextInt();
 
-        System.out.printf(
-            "Seja bem-vindo, %s! Você tem %d anos de idade",
-            nome,idade
-        );
-        dado.close();
+        // System.out.printf(
+        //     "Seja bem-vindo, %s! Você tem %d anos de idade",
+        //     nome,idade
+        // );
+        // dado.close();
+
+        // Operadores relacionais
+        // int x = 10;
+        // int y = 10;
+
+        // System.out.println("X == Y: " + (x == y)); // Operador de igualdade
+        // System.out.println("X != Y: " + (x != y)); // Operador de diferença
+        // System.out.println("X > Y: " + (x > y)); // Maior que
+        // System.out.println("X < Y: " + (x < y)); // Menor que
+        // System.out.println("X >= Y: " + (x >= y)); // Maior ou igual que
+        // System.out.println("X <= Y: " + (x <= y)); // Menor ou igual
+
+        double x = 3.4;
+
+        System.out.println(Math.floor(x));
+        
+
+
     }
 }
 /*
