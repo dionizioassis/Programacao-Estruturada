@@ -78,16 +78,12 @@ public class aula09 {
                 mat2[i][j] = dados.nextInt();
             }
         }
-
         if((linhas1 == linhas2) && (colunas1 == colunas2)){
             System.out.println("A soma é");
-            
+
         }else{
             System.out.println("Não é possível fazer a soma");
         }
-
-
-
         dados.close();
     }
 
