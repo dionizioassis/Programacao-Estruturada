@@ -47,11 +47,25 @@ public class aula12 {
 
         //Trabalhando com o StringBuffer
 
-        StringBuffer texto = new StringBuffer("Java");
-        texto.append(" Estruturado");
-        texto.insert(0, "Curso: ");
-        texto.delete(0, 7);
+        // StringBuffer texto = new StringBuffer("Java");
+        // texto.append(" Estruturado");
+        // texto.insert(0, "Curso: ");
+        // texto.delete(0, 7);
 
-        System.out.println(texto);
+        // System.out.println(texto);
+
+        /*
+        Receba uma frase pelo teclado e mostre:
+        • a frase sem espaços no início e no fim;
+        • a quantidade de caracteres;
+        • a frase em maiúsculas;
+        • a quantidade de vogais;
+        • cada palavra em uma linha separada.
+            trim()
+            length()
+            toUpperCase()
+            charAt(i)
+            split(" ")
+        */
     }
 }
