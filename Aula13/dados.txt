@@ -1,6 +1,4 @@
-Olá turma
-Aula 13 de programação estruturada
-Olá turma
-Aula 13 de programação estruturada
-Olá turma
-Aula 13 de programação estruturada
+Dionizio;29;12345678998
+Maria;25;98765432100
+Mateus;25;321654978
+Joana;50;6669998855
