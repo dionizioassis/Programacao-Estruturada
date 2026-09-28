@@ -53,7 +53,18 @@ public class aula12 {
         // texto.delete(0, 7);
 
         // System.out.println(texto);
-
+        String frase = dados.nextLine();
+        System.out.printf("Frase sem espacos no inicio e no final: %s%n",frase.trim());
+        System.out.printf("Quantidade de caracteres: %d%n",frase.length());
+        System.out.printf("A frase em maiúsculas: %s%n",frase.toUpperCase());
+        int vogais = 0;
+        for (int i = 0; i< frase.length(); i++){
+            char letra = frase.charAt(i);
+            if (letra == 'a' ||letra == 'e' ||letra == 'i' ||letra == 'o' ||letra == 'u') {
+                vogais++;
+            }
+        }
+        System.out.printf("A quantidade de vogais : %d%n",vogais);
         /*
         Receba uma frase pelo teclado e mostre:
         • a frase sem espaços no início e no fim;
@@ -67,5 +78,6 @@ public class aula12 {
             charAt(i)
             split(" ")
         */
+
     }
 }

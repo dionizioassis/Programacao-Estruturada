@@ -51,6 +51,23 @@ public class aula13 {
             //     System.out.println("Arquivo já existe");
             // }
             
+
+            /*
+            Crie um programa em Java que simule um cadastro dentro de um arquivo.
+            A ideia é registrar alunos de uma escola. Você deve ler o nome do aluno, a idade e o IRA do aluno e escrever em um arquivo chamado matrícula.txt.
+
+            Depois crie um loop para buscar o aluno com o maior IRA.
+            */
+
+
+
+
+
+
+
+
+
+
         } catch (IOException e) {
             System.out.println("Erro ao escrever no arquivo");
         }
