@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="nome">Nome:</label>
+        <input type="text">
+
+    </form>
+    
+</body>
+
+<script>
+
+let idade = 20
+let idade2 = `25 ou ${idade}`
+let nome = "Ana"
+let aprovado = true
+
+document.write("Tipo da idade: "+typeof idade + "\n")
+document.write(typeof idade2 + "\n")
+document.write(typeof nome+ "\n")
+document.writeln(typeof aprovado)
+
+// idade = prompt("Digite sua idade")
+// document.writeln("Novo tipo da idade: " + typeof idade)
+
+// console.log(5 === "5")
+
+let texto = ""
+
+if(texto){
+    console.log(`Entrou no IF: ${texto}`)
+}else{
+    console.log(`Entrou no else ${texto}`)
+}
+
+let nota = 10
+
+if (nota >= 9){
+    console.log("Excelente!")
+}else if(nota >=7 ){
+    console.log("Bom")
+}else if(nota >= 6){
+    console.log("regular")
+}else{
+    console.log("Reprovado")
+}
+
+// Crie um switch capaz de converter o número do mês no seu nome: 1 - Janeiro; 2 - Fevereiro; 3 - Março ....
+
+let mes = 15
+
+switch (mes) {
+    case 1:
+        console.log("janeiro")
+        break;
+    case 2:
+        console.log("Fevereiro")
+        break;
+    case 3:
+        console.log("Março")
+        break;
+    case 4:
+        console.log("Abril")
+        break;
+    case 5:
+        console.log("Maio")
+        break;
+    case 6:
+        console.log("Junho")
+        break;
+    case 7:
+        console.log("Julho")
+        break;
+    case 8:
+        console.log("Agosto")
+        break;
+    case 9:
+        console.log("Setembro")
+        break;
+    case 10:
+        console.log("Outubro")
+        break;
+    case 11:
+        console.log("Novembro")
+        break;
+    case 12:
+        console.log("Dezembro")
+        break;
+    default:
+        console.log("Valor inválido")
+        break;
+}
+
+
+idade = 20
+let marioIdade
+
+marioIdade = (idade >= 18) ? true:false
+
+console.log(marioIdade)
+
+marioIdade && console.log('Maior de idade')
+
+nome = "Dionizio"
+
+mensagem = nome || "Visitante"
+
+console.log(mensagem)
+
+let quantidade
+console.log(typeof quantidade)
+let valor = quantidade ?? 0
+
+console.log(valor)
+
+
+</script>
+
+
+</html>
