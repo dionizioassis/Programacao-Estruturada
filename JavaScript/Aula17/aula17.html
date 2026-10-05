@@ -70,16 +70,46 @@
 
     // Ler 4 valores de compra e calcular o total gasto.
     
-    let total = 0
-    for(let i =0; i < 4; i++){
-        let valor = Number(prompt('Didite o valor da compra: '))
-        total = total + valor
-    }
-    console.log(`O valor da compra foi: ${total}`)
-    let media = 0
-    media = total/4
-    console.log(`A média foi: ${media}`)
+    // let total = 0
+    // let contador = 0
+    // for(let i =0; i < 5; i++){
+    //     let valor = Number(prompt('Didite o valor da despesa: '))
+    //     total = total + valor
+    //     if(valor > 100){
+    //         contador++
+    //     }
+    // }
+    // console.log(`O valor total das despesas foi: ${total}`)
+    // let media = 0
+    // media = total/5
+    // console.log(`A média foi: ${media}`)
+    // console.log(`A quantidade de despesas maiores que 100,00 foi: ${contador}`)
 
+    /*
+    Solicite ao usuário o valor de 5 despesas. Ao final, apresente:
+    • o total gasto;
+    • a média das despesas;
+    • quantas despesas foram maiores que R$ 100,00.
+    */
+
+    // continue e break
+    // for(let i = 1; i < 10; i++){
+    //     if(i % 3 === 0){
+    //         continue;
+    //     }
+
+    //     console.log(`O número ${i} NÃO é multiplo de 3`)
+    // }
+
+    // Introdução a arrays
+    let notas = new Array(4)
+    for(i = 0; i < notas.length; i++){
+        notas[i] = Number(prompt('Digite a nota${i+1}'))
+    }
+    // notas = [3,6,8,10]
+    for (let nota of notas) {
+        console.log(`A nota foi: ${nota}`);
+    }
 
     
 
