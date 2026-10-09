@@ -56,10 +56,74 @@
     • Percorra o array para calcular o valor total e a média dos preços.
     • Em uma nova repetição, conte quantos preços estão acima da média.
     • Mostre o array preenchido, a média e a quantidade encontrada.
-    
     */
+    // soma = 0
+    // let precos = new Array(6)
+    // for(let i = 0; i< precos.length; i++){
+    //     precos[i] = Number(prompt(`Digite o preço do produto ${i+1}`))
+    //     soma += precos[i]
+    // }
+    // media = soma/precos.length
+    // contador = 0
+    // for(let preco of precos){
+    //     if(preco > media){
+    //         contador++
+    //     }
+    // }
+    // console.log(precos)
+    // console.log(`A quantidade de produtos acima da média é: ${contador}`)
+    // console.log(`A média é : ${media}`)
+    
+/*
+Considere a fila inicial: ["Ana", "Bruno", "Carla"]. Atualize a fila conforme os eventos abaixo.
+• Mostre quem foi chamado e como ficou a fila após as operações.*/
+let fila = ["Ana", "Bruno", "Carla"]
+//• Diego chega para atendimento comum e deve entrar no final da fila.
+console.log(fila)
+fila.push("Diego")
+console.log(fila)
+//• Eva possui prioridade e deve entrar no início da fila.
+fila.unshift("Eva")
+console.log(fila)
+//• O primeiro cliente da fila é chamado para atendimento e deve ser removido.
+fila.shift()
+console.log(fila)
+// O Diego desistiu do atendimento
+fila.pop()
+console.log(fila)
 
+// splice(inicio, quantidade a ser removida, elmento para substituir)
+//             0   1   2   3
+let letras = ["A","B","C","D"]
+let letra = "N"
+letras.splice(1,2,"Y","X","Z",letra)
+console.log(letras)
+letras.splice(1,3)
+console.log(letras)
 
+// slice(inicio, final)
+let cidades = ['Fortaleza','São Paulo','Rio de Janeiro','Salvador']
+console.log(cidades)
+let cidades2 = cidades.slice(1,3)
+console.log(cidades2)
+
+// Verificar a presença de um valor
+//includes()
+console.log(cidades.includes('Quixadá'))
+console.log(cidades.includes('Fortaleza'))
+
+//indexOf()
+console.log(cidades.indexOf('Salvador'))
+console.log(cidades.indexOf('Quixadá'))
+
+/*
+Um sistema possui o array 
+["Ana", "Bruno", "Carla", "Bruno", "Davi"].
+• Solicite ao usuário um nome para consulta.
+• Informe se o nome aparece na lista.
+• Caso apareça, mostre a posição da primeira.
+• Caso não apareça, exiba uma mensagem informando que o nome não foi localizado.
+*/
 
 
 
