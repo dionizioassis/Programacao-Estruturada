@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    // Criação de Arrays
+    // Criar Array vazio
+    const nomes = [];
+
+    //Com valores
+    let notas = [7,8,9,10]
+
+    //Com o construtor
+    var dados = new Array(5)
+
+    // Percorrendo um array
+    // for (inicialização; condição de parada; passo){
+        // código  
+    // }
+    // Utilize o for para contar quantas notas estão cima de 8 e depois calcule a média
+    let soma = 0
+    let contador = 0
+    for(let i = 0; i < notas.length; i++){
+        soma = soma + notas[i]
+        if(notas[i] > 8){
+            contador++
+        }
+    }
+    let media = soma/notas.length
+    console.log(`A média foi: ${media}`)
+    console.log(`A quantidade de notas acima de 8 foi: ${contador}`)
+    //for (variavel of array){
+        //código
+    //}
+    soma = 0
+    contador = 0
+    for (let nota of notas){
+        soma = soma + nota;
+        (nota > 8) ? contador++ : contador +=0
+    }
+    media = soma/notas.length
+    console.log(`A média foi: ${media}`)
+    console.log(`A quantidade de notas acima de 8 foi: ${contador}`)
+
+
+    /*
+    Uma loja deseja analisar os preços de seis produtos cadastrados pelo usuário.
+    • Leia os seis preços com prompt e armazene-os em um array.
+    • Percorra o array para calcular o valor total e a média dos preços.
+    • Em uma nova repetição, conte quantos preços estão acima da média.
+    • Mostre o array preenchido, a média e a quantidade encontrada.
+    
+    */
+
+
+
+
+
+</script>
+
+</html>
