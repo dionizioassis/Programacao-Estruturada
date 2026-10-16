@@ -12,56 +12,80 @@
 <script>
 
     // array.concat() - Concatena arrays
-    let turmaA = ["Ana","Bia"]
-    let turmaB = ["Caio", "Davi"]
-    let turmaC = ["Maria", "João"]
+//     let turmaA = ["Ana","Bia"]
+//     let turmaB = ["Caio", "Davi"]
+//     let turmaC = ["Maria", "João"]
 
-    let turma = turmaC.concat(turmaB,turmaA)
-    console.log(turma)
+//     let turma = turmaC.concat(turmaB,turmaA)
+//     console.log(turma)
 
-    // array.sort() -> Organiza os elementos de um array
-    turma.sort()
-    console.log(turma)
+//     // array.sort() -> Organiza os elementos de um array
+//     turma.sort()
+//     console.log(turma)
 
-    turma.reverse()
-    console.log(turma)
+//     turma.reverse()
+//     console.log(turma)
 
-    // Cópias de um array
-    let original = [10,20,30]
-    let copia = original
-    let copiaDeVerdade = original.slice()
+//     // Cópias de um array
+//     let original = [10,20,30]
+//     let copia = original
+//     let copiaDeVerdade = original.slice()
 
-    copia[0] = 99
+//     copia[0] = 99
 
-    console.log(copia)
-    console.log(original)
-    console.log(copiaDeVerdade)
+//     console.log(copia)
+//     console.log(original)
+//     console.log(copiaDeVerdade)
 
-    /*
-    Um aplicativo mantém uma lista de tarefas pendentes.
-    • Comece com o array ["estudar", "revisar", "enviar atividade"].
-    • Adicione uma nova tarefa comum ao final e uma tarefa urgente no início.
-    • Solicite ao usuário o nome de uma tarefa cancelada. Caso ela exista, remova somente a primeira ocorrência.
-    • Marque a primeira tarefa como concluída removendo-a da lista.
-    */
-   let lista = ["estudar", "revisar", "enviar atividade"]
-   lista.push("Resolver questões")
-   lista.unshift("Limpar a casa")
-   let cancelada = prompt('Digite a tarefa a ser concelada')
+//     /*
+//     Um aplicativo mantém uma lista de tarefas pendentes.
+//     • Comece com o array ["estudar", "revisar", "enviar atividade"].
+//     • Adicione uma nova tarefa comum ao final e uma tarefa urgente no início.
+//     • Solicite ao usuário o nome de uma tarefa cancelada. Caso ela exista, remova somente a primeira ocorrência.
+//     • Marque a primeira tarefa como concluída removendo-a da lista.
+//     */
+//    let lista = ["estudar", "revisar", "enviar atividade"]
+//    lista.push("Resolver questões")
+//    lista.unshift("Limpar a casa")
+//    let cancelada = prompt('Digite a tarefa a ser concelada')
    
-   if(lista.includes(cancelada)){
-        let indice = lista.indexOf(cancelada)
-        lista.splice(indice,1)
-        document.write(lista)
-   }else{
-        document.write("A tarefa não está na lista")
-   }
-   lista.shift()
-   document.write(lista)
+//    if(lista.includes(cancelada)){
+//         let indice = lista.indexOf(cancelada)
+//         lista.splice(indice,1)
+//         document.write(lista)
+//    }else{
+//         document.write("A tarefa não está na lista")
+//    }
+//    lista.shift()
+//    document.write(lista)
 
+// Manipulação de Strings
+// índices e propriedade length
 
+let linguagem = 'JavaScript'
 
+console.log(linguagem.length)
+console.log(linguagem[1])
+console.log(linguagem[linguagem.length - 1])
 
+let nome = "ana"
+nome[0] = 'A'
+console.log(nome)
+
+for(let i = 0; i<linguagem.length; i++){
+    console.log(i,linguagem[i])
+}
+for (let letra of nome){
+    console.log(letra)
+}
+
+/*
+Receba uma palavra e conte quantas vogais ela possui.
+• Leia o texto utilizando prompt().
+• Percorra todos os caracteres da palavra.
+• Considere as vogais a, e, i, o e u, independentemente de maiúsculas e minúsculas.
+• Ao final, mostre a quantidade encontrada.
+*/
 
 </script>
 
