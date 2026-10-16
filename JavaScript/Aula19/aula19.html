@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+    // array.concat() - Concatena arrays
+    let turmaA = ["Ana","Bia"]
+    let turmaB = ["Caio", "Davi"]
+    let turmaC = ["Maria", "João"]
+
+    let turma = turmaC.concat(turmaB,turmaA)
+    console.log(turma)
+
+    // array.sort() -> Organiza os elementos de um array
+    turma.sort()
+    console.log(turma)
+
+    turma.reverse()
+    console.log(turma)
+
+    // Cópias de um array
+    let original = [10,20,30]
+    let copia = original
+    let copiaDeVerdade = original.slice()
+
+    copia[0] = 99
+
+    console.log(copia)
+    console.log(original)
+    console.log(copiaDeVerdade)
+
+    /*
+    Um aplicativo mantém uma lista de tarefas pendentes.
+    • Comece com o array ["estudar", "revisar", "enviar atividade"].
+    • Adicione uma nova tarefa comum ao final e uma tarefa urgente no início.
+    • Solicite ao usuário o nome de uma tarefa cancelada. Caso ela exista, remova somente a primeira ocorrência.
+    • Marque a primeira tarefa como concluída removendo-a da lista.
+    */
+
+
+
+</script>
+
+</html>
