@@ -72,13 +72,10 @@ let nome = "ana"
 nome[0] = 'A'
 console.log(nome)
 
-for(let i = 0; i<linguagem.length; i++){
-    console.log(i,linguagem[i])
-}
+
 for (let letra of nome){
     console.log(letra)
 }
-
 /*
 Receba uma palavra e conte quantas vogais ela possui.
 • Leia o texto utilizando prompt().
@@ -86,6 +83,22 @@ Receba uma palavra e conte quantas vogais ela possui.
 • Considere as vogais a, e, i, o e u, independentemente de maiúsculas e minúsculas.
 • Ao final, mostre a quantidade encontrada.
 */
+let contador = 0
+for(let i = 0; i<linguagem.length; i++){
+    if (linguagem[i] == 'a' || linguagem[i] == 'e' || linguagem[i] == 'i' || linguagem[i] == 'o'|| linguagem[i] == 'u'){
+        contador++
+    }
+}
+console.log(`A palavra ${linguagem} possui ${contador} vogais`)
+
+nome = "Maria"
+
+nome = nome.toLowerCase()
+console.log(nome)
+
+nome = nome.toUpperCase()
+console.log(nome)
+
 
 </script>
 
