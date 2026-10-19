@@ -8,4 +8,45 @@
 <body>
     
 </body>
+
+<script>
+    let nome = ' Dionizio'
+    // definir padrões
+    let nomePadrao = nome.toUpperCase()
+    nomePadrao = nomePadrao.trim()
+    console.log(nomePadrao)
+
+    nomePadrao = nomePadrao.toLocaleLowerCase()
+    console.log(nomePadrao)
+
+    // Verificando a presença de trechos
+
+    let arquivo = "arquivo.pdf"
+    let email = "dionizio123@gmail.com"
+
+    console.log(arquivo.endsWith('pdf'))
+    let divisor = email.indexOf('@')
+    console.log(email.indexOf('@'))
+
+    let user = email.slice(0,divisor)
+    let provedorEmail = email.slice(divisor+1,email.length)
+
+    console.log(user)
+    console.log(provedorEmail)
+
+
+    /*
+    Considere um código acadêmico no formato CURSO-ANO-NÚMERO, por exemplo: CC-2026-0147.
+    • Localize a posição do primeiro e do segundo hífen.
+    • Extraia separadamente o curso, o ano e o número.
+    • Converta o curso para letras minúsculas.
+    • Utilize apenas os dois últimos caracteres do ano.
+    • Monte o resultado no formato curso/ano-numero. Para o exemplo, o resultado deve ser cc/26-0147.
+    
+    */
+
+
+
+</script>
+
 </html>
