@@ -37,13 +37,35 @@
 
     /*
     Considere um código acadêmico no formato CURSO-ANO-NÚMERO, por exemplo: CC-2026-0147.
-    • Localize a posição do primeiro e do segundo hífen.
-    • Extraia separadamente o curso, o ano e o número.
-    • Converta o curso para letras minúsculas.
-    • Utilize apenas os dois últimos caracteres do ano.
-    • Monte o resultado no formato curso/ano-numero. Para o exemplo, o resultado deve ser cc/26-0147.
-    
     */
+   //             0123456789
+    let codigo = "CC-2026-0147"
+    //• Localize a posição do primeiro e do segundo hífen.
+    let hifens = []
+
+    for(let i = 0; i < codigo.length; i++){
+        if(codigo[i] === '-'){
+            hifens.push(i)
+        }
+    }
+    console.log(hifens)
+
+    //• Extraia separadamente o curso, o ano e o número.
+    let curso = codigo.slice(0,hifens[0])
+
+    //• Converta o curso para letras minúsculas.
+    curso = curso.toLocaleLowerCase()
+
+    //• Utilize apenas os dois últimos caracteres do ano.
+    let ano = codigo.slice(hifens[0]+3,hifens[1])
+    let codigoFinal = codigo.slice(hifens[1],codigo.length)
+    console.log(curso)
+    console.log(ano)
+    console.log(codigoFinal)
+    // • Monte o resultado no formato curso/ano-numero. Para o exemplo, o resultado deve ser cc/26-0147.
+    let novoCodigo = `${curso}/${ano}${codigoFinal}`
+    console.log(novoCodigo)
+   
 
 
 
