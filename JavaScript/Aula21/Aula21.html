@@ -9,8 +9,58 @@
     
 </body>
 
+<script src="Aula21.js"></script>
+
 <script>
     // Funções
+
+    /*
+    function nomeDaFunção(parâmetros...){
+        // código da função
+        return retornoDaFunção
+    }
+    */
+    //chamada da função
+    saudar("Maria",'João')
+    criarMenuPrincipal()
+    explicarErro()
+    let mediaCalculada = calcularMedia(10,8,7)
+    console.log(mediaCalculada.toFixed(2))
+/*
+ Crie uma função que receba o nome de um aluno e exiba uma mensagem de boas-vindas.
+• A mensagem deverá ser construída utilizando template literal.
+• A função não precisa retornar nenhum valor.
+• Faça duas chamadas utilizando nomes diferentes.
+*/
+// • A função deverá possuir um parâmetro chamado nome.
+   let name = 'Cintia'
+   mandarMensagem(name)
+   let nome = " Ana Lima "
+   let usuario = normalizarUsuario(nome)
+   console.log(usuario)
+   // Crie uma função que receba como parâmetro um array e um limite e conte quantos valores desse array estão acima do limite
+   //                valores = [10,20,30,40] limite = 20
+   let dados = [10,20,30,40,50,60]
+   let limite = 20
+   let contagem = contarAcima(dados,limite)
+   console.log(contagem)
+   verificarSituacao(5,10,8)
+
+   let mediaPonderada = calcularMediaPonderada(5,1,8,3)
+
+   console.log(mediaPonderada)
+
+/*
+Desenvolva a função contarAcimaDaMedia(valores).
+• Receba um array contendo valores numéricos e considere que ele possui pelo menos um elemento.
+• Calcule a média de todos os valores utilizando uma estrutura de repetição.
+• Percorra novamente o array e conte quantos elementos são estritamente maiores que a média calculada.
+• Não altere o array recebido como parâmetro.
+• Retorne a quantidade encontrada.
+
+
+*/
+
 
 </script>
 
