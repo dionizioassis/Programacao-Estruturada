@@ -65,8 +65,28 @@
     // • Monte o resultado no formato curso/ano-numero. Para o exemplo, o resultado deve ser cc/26-0147.
     let novoCodigo = `${curso}/${ano}${codigoFinal}`
     console.log(novoCodigo)
-   
 
+
+    //////////////////////////////////////////////////
+    console.log(codigo)
+    let codigo2 = codigo.split('-')
+    console.log(codigo2)
+    let curso2 = codigo2[0].toLocaleLowerCase()
+    console.log(curso2) 
+    let ano2 = codigo2[1].slice(2,codigo2.length+1)
+    console.log(ano2)
+    let codigoFinal2 = codigo2[2]
+    console.log(codigoFinal2)
+    let novoCodigo2 = `${curso2}/${ano2}-${codigoFinal2}`
+    console.log(novoCodigo2)
+
+    let nomes = ['João','da','Silva']
+    nome = nomes.join(' ')
+    console.log(nome)
+
+    let idade = 18
+    //                 (condição) ? se verdadeiro : se falso
+    let resultado = (idade >= 18) ? 'Maior de idade' : (idade > 0) ? 'menor de idade': 'idade inválida'
 
 
 </script>
