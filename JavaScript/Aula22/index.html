@@ -10,16 +10,104 @@
 </body>
 
 <script>
-    let produto = {
-        nome : "Mouse",
-        codigo: 10,
-        preco: 50,
-        estoque: 5
-    }
-    console.log(produto.nome)
-    console.log(produto.preco)
 
-    console.log(`O ${produto['nome']} custa ${produto.preco} e temos ${produto.estoque} no estoque`)
+/*
+Crie um objeto produto a partir de informações informadas pelo usuário e depois apresente uma frase com seus dados.
+• Solicite código, nome, preço e quantidade em estoque.
+• Faça as conversões numéricas necessárias.
+• Monte um único objeto literal com as quatro informações.
+• Exiba nome, preço e estoque utilizando propriedades do objeto.
+• Não utilize quatro arrays separados para representar o mesmo produto.
+    
+*/
+    let nome = 'Teclado' //prompt('Digite o nome do produto')
+    let codigo = 20//Number(prompt('Digite o código do produto'))
+    let preco = 100//Number(prompt('Digite o preço do produto'))
+    let estoque = 50//Number(prompt('Digite a quantidade em estoque do produto'))
+
+    let produto2 = {
+        nome : nome,
+        codigo : codigo,
+        preco,
+        estoque
+    }
+    console.log(produto2.nome)
+    console.log(produto2.preco)
+
+    console.log(`O ${produto2['nome']} custa ${produto2.preco} e temos ${produto2.estoque} no estoque`)
+
+    produto2.desconto = true
+    produto2.nome = 'Teclado RGB'
+
+    delete produto2.nome
+
+    produto2.nome = 'Teclado RGB'
+    console.log(produto2)
+
+    let cliente = {
+        nome:"João",
+        idade:23,
+        email:'joao@email.com',
+        endereco: {
+            rua:'Rua dos bobos',
+            numero: 0,
+            cep:'12345678'
+        }
+    }
+
+    console.log(`O cliente ${cliente.nome} mora na rua ${cliente.endereco.rua}`)
+
+    let produtos = [
+        {nome:'Placa mãe', codigo:20, preco: 400, estoque: 20},
+        {nome:'Monitor', codigo:21, preco: 1400, estoque: 25},
+        {nome:'Processador', codigo:22, preco: 800, estoque: 13},
+        {nome:'Fonte', codigo:23, preco: 200, estoque: 40},
+    ]
+    
+    for (produto of produtos){
+        console.log(`${produto.nome} : ${produto.preco}`)
+    }
+    console.log('==================================')
+    
+    for(let i = 0; i < produtos.length; i++){
+        console.log(`${produtos[i].nome} : ${produtos[i].preco}`)
+    }
+    console.log("================")
+
+    for(let chave in produto2){
+        console.log(`${chave}: ${produto2[chave]}`) 
+    }
+    console.log(produto2)
+    let produtoCopia = produto2
+
+    console.log(produtoCopia)
+    produtoCopia.nome = 'Gabinete'
+
+    console.log('Produto Original: ',produto2)
+
+
+let jogadores = [
+    {apelido: 'Jogador1', pontos:30, ativo:true},
+    {apelido: 'Jogador2', pontos:20, ativo:true},
+]
+//atualizarPontuacao(jogadores,'Jogador1',20) // retorno = 50
+/*
+Desenvolva a função atualizarPontuacao(jogadores, apelido, pontos).
+• Receba um array de objetos com apelido, pontos e ativo.
+• Localize o jogador cujo apelido seja igual ao informado.
+• A pontuação só poderá ser alterada se o jogador estiver ativo.
+• Some pontos ao valor atual e retorne a nova pontuação.
+• Retorne -1 quando o jogador não existir ou estiver inativo.
+*/
+
+let texto = '{"nome":"Ana","idade":20}';
+
+let pessoa = JSON.parse(texto);
+
+console.log(pessoa.nome);
+console.log(pessoa.idade);
+
+
 
 
 
