@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    let baseURL = 'https://fakestoreapi.com/'
+    let id = 3
+    async function todosProdutos() {
+        let resposta = await fetch(`${baseURL}products/${id}`)
+        console.log(resposta.ok)
+        resposta = await resposta.json()
+        console.log(resposta)
+    }
+
+
+   let novoProduto = {
+    id:21,
+    title:'Notebook',
+    price:2000,
+    description:'usado',
+    category:'eletronicos',
+    image:'https://http2.mlstatic.com/D_NQ_NP_771152-MLA107470416948_032026-O.webp'
+   }
+
+    async function cadastrarProduto(novoProduto) {
+        let resposta = await fetch(`${baseURL}products/`,{
+            method:"POST",
+            headers:{"Content-Type":"application/json"},
+            body:JSON.stringify(novoProduto)
+        })
+        let resultado = await resposta.json()
+        console.log(resultado)
+    }
+
+    cadastrarProduto(novoProduto)
+
+    todosProdutos()
+
+    // Solicite do usuário via prompt o seu cep e faça uma requisição para a API do viaCep para trazer os dados do cep informado.
+
+
+</script>
+
+
+</html>
