@@ -45,6 +45,42 @@
 
     // Solicite do usuário via prompt o seu cep e faça uma requisição para a API do viaCep para trazer os dados do cep informado.
 
+    let atualizacaoProduto = {
+    id:1,
+    title:'Processador',
+    price:1000,
+    description:'novo',
+    category:'eletronicos',
+    image:'https://http2.mlstatic.com/D_NQ_NP_771152-MLA107470416948_032026-O.webp'
+   }
+
+   let idProduto = 1
+
+   async function atualizarProduto(){
+    let resposta = await fetch(`${baseURL}/products/${idProduto}`,{
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(atualizacaoProduto)
+    })
+
+    let resultado = await resposta.json()
+    console.log(`resultado = ${resposta.ok}`)
+    console.log(`resultado = ${resultado.title}`)
+   }
+   atualizarProduto()
+
+   async function deletarProduto(idProduto){
+    let resposta = await fetch(`${baseURL}/products/${idProduto}`,{
+        method:'DELETE'
+    })
+    console.log('Resposta do delete '+resposta.ok)
+    let resultado = await resposta.json()
+    console.log('Resultado do delete: '+ resultado)
+   }
+   deletarProduto(idProduto)
+
+
+
 
 </script>
 
