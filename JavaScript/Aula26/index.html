@@ -11,27 +11,38 @@ div{
     margin-bottom: 20px;
     margin-top: 20px;
 }
+.divFormulario{
+    background-color: aquamarine;
+    padding: 10px;
+}
 
 </style>
-
 <body>
-    <div>
+    <div class="divFormulario">
         <label for="name">Nome: </label>
-        <input id="nome" type="text" placeholder="Ex.: João">
+        <input id="nome" type="text" placeholder="Ex.: João" name="nome">
     </div>
-    <div>
+
+    <div class="divFormulario" id="divEmail">
         <label for="email">Email: </label>
-        <input id="email" type="text" placeholder="Ex.: joao@gmail.com">
+        <input id="email" type="text" placeholder="Ex.: joao@gmail.com" name="email">
     </div>
-    <div>
+    <div class="divFormulario">
         <label for="senha">Senha: </label>
         <input id="senha" type="text" placeholder="Ex.: J123456">
     </div>
-
-    
 </body>
 
 <Script>
+
+    const inputName = document.getElementById('nome')
+    console.log(inputName)
+
+    let divEmail = document.getElementById('divEmail')
+    console.log(divEmail)
+
+    let nome = document.getElementsByName('nome')
+    console.log(nome[1])
 
   
 </Script>
