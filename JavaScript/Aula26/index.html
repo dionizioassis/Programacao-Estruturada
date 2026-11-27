@@ -15,22 +15,47 @@ div{
     background-color: aquamarine;
     padding: 10px;
 }
+.divFormulario .divNome input{
+    color: blue;
+}
 
 </style>
-<body>
+<body style="margin-bottom: 500px;">
     <div class="divFormulario">
         <label for="name">Nome: </label>
-        <input id="nome" type="text" placeholder="Ex.: João" name="nome">
+
+        <div class="divNome">
+            <input id="nome" type="text" placeholder="Ex.: João" name="nome" value="João">
+        </div>
+
+        <button onclick="trocarNome()">Trocar</button>
+        
     </div>
 
     <div class="divFormulario" id="divEmail">
+
+        <div class="divNome">
+            <input id="nome" type="text" placeholder="Ex.: João" name="nome">
+        </div>
+
         <label for="email">Email: </label>
         <input id="email" type="text" placeholder="Ex.: joao@gmail.com" name="email">
+        
     </div>
     <div class="divFormulario">
         <label for="senha">Senha: </label>
         <input id="senha" type="text" placeholder="Ex.: J123456">
     </div>
+
+    <div id="olaMundo">
+        <h1>Olá mundo</h1>
+        <p>Estamos estudando o DOM</p>
+        <p style="display: none;">Aprendendo a modificar os elementos do HTML</p>
+    </div>
+
+
+
+
 </body>
 
 <Script>
@@ -43,6 +68,43 @@ div{
 
     let nome = document.getElementsByName('nome')
     console.log(nome[1])
+
+    let divsFomulario = document.getElementsByClassName('divFormulario')
+    console.log(divsFomulario)
+
+    let inputNome = document.querySelector('.divFormulario .divNome input')
+    console.log(inputNome)
+
+    let inputNome2 = document.querySelectorAll('.divFormulario .divNome input')
+    console.log(inputNome2)
+
+    let elementoNaoExiste = document.getElementById('oi')
+    console.log(elementoNaoExiste)
+
+
+    let divOla = document.getElementById('olaMundo')
+    console.log(divOla.textContent)
+    console.log(divOla.innerText)
+    console.log(divOla.innerHTML)
+
+
+
+    
+    function trocarNome(){
+        let inputName = document.getElementById('nome')
+        console.log(inputName.value)
+    }
+
+    // Crie no html um input para o email, um input para a senha e um botão chamado logar. Quando o usuário clicar em logar você deve acessar o email e a senha e comparar com o email(js@gmail.com) e senha (244466666) cadastrado. Se estiver correto mostrar na tela "você pode acessar o sistema" se não "You Shall not pass!!" 
+
+
+
+
+
+
+
+
+
 
   
 </Script>
