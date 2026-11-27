@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <div style="width: 150px;">
+        <img id="imagem" src="" alt="">
+    </div>
+
 </head>
 <body>
     
@@ -16,6 +21,8 @@
         let resposta = await fetch(`${baseURL}products/${id}`)
         console.log(resposta.ok)
         resposta = await resposta.json()
+        let imagem = document.getElementById('imagem')
+        image.addAtribut()
         console.log(resposta)
     }
 
@@ -81,6 +88,7 @@
 
    // Utiliza a API da fakestore para criar 4 funções para simular um crud completo com os usuários.
    // 1 - Crie uma função que receba como parâmetro um id de um usuário e mostre o nome de usuário, e-mail e senha dele.
+
 
    // 2 - Crie uma função que receba como parâmetro um id de um usuário e atualize os dados desse usuário conforme a documentação da API.
 
